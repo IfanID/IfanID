@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IFANID - Next.js Project
 
-## Getting Started
+## Deskripsi
 
-First, run the development server:
+Proyek ini adalah aplikasi web berbasis Next.js dengan App Router, menggunakan struktur direktori dalam `src/` untuk manajemen kode yang lebih rapi. Proyek ini dikembangkan di Termux dan didesain untuk menyediakan halaman multi-rute dengan komponen yang terpisah.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Fitur
+
+- Menggunakan Next.js dengan App Router
+
+- Struktur kode yang bersih dalam `src/`
+
+- Menggunakan ESLint untuk memastikan kualitas kode
+
+- Komponen modular dalam folder `components`
+
+## Struktur Direktori
+
+```
+ifanid/
+│── .next/               # Build output Next.js
+│── node_modules/        # Dependency packages
+│── public/              # Static assets (favicon, images, etc.)
+│── src/                 # Source code
+│   ├── app/             # App Router structure
+│   │   ├── routes/      # Routing pages
+│   │   │   ├── about/
+│   │   │   ├── contact/
+│   │   │   ├── page.js
+│   │   ├── layout.js
+│   │   ├── page.js
+│   ├── components/      # Reusable components
+│   │   ├── layout/
+│   │   │   ├── Navbar/
+│   │   │   │   ├── index.js
+│   │   │   │   ├── styles.module.css
+│   ├── styles/          # Global and module styles
+│── .gitignore           # Git ignore rules
+│── eslint.config.mjs    # ESLint configuration
+│── jsconfig.json        # JavaScript config (import aliases)
+│── next.config.mjs      # Next.js configuration
+│── package.json         # Dependencies and scripts
+│── package-lock.json    # Dependency lock file
+│── README.md            # Dokumentasi proyek ini
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cara Menjalankan
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Pastikan Anda berada di direktori proyek, lalu jalankan perintah berikut:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev  # Menjalankan aplikasi dalam mode pengembangan
+```
 
-## Learn More
+Buka browser dan akses `http://localhost:3000` untuk melihat aplikasi berjalan.
 
-To learn more about Next.js, take a look at the following resources:
+## Teknologi yang Digunakan
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js - Framework React untuk aplikasi web
+- React.js - Library JavaScript untuk UI
+- ESLint - Linter untuk kode JavaScript
+- CSS Modules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Kontributor
 
-## Deploy on Vercel
+- Ifan - Pengembang utama
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lisensi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyek ini menggunakan lisensi MIT. Silakan modifikasi dan gunakan sesuai kebutuhan.
