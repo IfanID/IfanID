@@ -1,0 +1,44 @@
+/* Styling untuk content agar menempel ke layar */
+.content {
+    width: 100vw;
+    min-height: calc(100vh - 60px); /* Menyesuaikan dengan tinggi navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* Debugging */
+    background-color: rgba(0, 255, 0, 0.2); /* Warna hijau transparan */
+    border: 3px solid red; /* Batas merah */
+}
+
+.firstPage {
+    width: 90vw; /* Gunakan 90% dari lebar layar */
+    max-width: 1440px; /* Maksimal lebar agar tidak terlalu besar di layar besar */
+
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px auto 0 auto; /* Jarak atas sama dengan kiri dan kanan, bawah 0 */
+}
+
+/* Responsif untuk layar tablet */
+@media (max-width: 768px) {
+    .firstPage {
+        width: 95vw;
+        padding: 15px;
+        margin: 15px auto 0 auto; /* Jarak atas ikut menyesuaikan */
+    }
+}
+
+/* Responsif untuk layar HP kecil */
+@media (max-width: 480px) {
+    .firstPage {
+        width: calc(100vw - 20px); /* Lebar penuh dikurangi margin */
+        margin: 10px 10px 0 10px; /* Jarak atas, kiri, dan kanan sama, bawah tetap 0 */
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
